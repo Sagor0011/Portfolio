@@ -33,6 +33,13 @@ nav a {
     text-decoration: none;
     font-size: 16px;
     font-weight: bold;
+    padding: 10px 15px;
+    transition: background 0.3s;
+}
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
 }
 
 .about img {
@@ -76,7 +83,6 @@ footer {
     background-color: #222;
     color: white;
     padding: 15px;
-    position: relative;
     width: 100%;
 }
 
@@ -88,6 +94,7 @@ button {
     color: white;
     border-radius: 5px;
     font-size: 16px;
+    transition: background 0.3s;
 }
 
 button:hover {
