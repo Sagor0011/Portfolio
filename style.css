@@ -1,43 +1,25 @@
-/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     text-align: center;
-    background-color: #f8f9fa;
-    transition: 0.5s ease-in-out;
+    background-color: #f4f4f4;
+    transition: background 0.5s, color 0.5s;
 }
 
-/* Dark Mode */
 .dark-mode {
     background-color: #222;
-    color: white;
+    color: #fff;
 }
 
-/* Header */
 header {
-    background-color: #343a40;
+    background-color: #222;
     color: white;
-    padding: 20px;
+    padding: 15px;
 }
 
-button {
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    padding: 10px 15px;
-    cursor: pointer;
-    font-size: 14px;
-    border-radius: 5px;
-}
-
-button:hover {
-    background-color: #0056b3;
-}
-
-/* Navigation */
 nav {
-    background-color: #444;
+    background-color: #333;
     padding: 10px;
     position: sticky;
     top: 0;
@@ -49,57 +31,72 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
+    font-size: 16px;
     font-weight: bold;
+    padding: 10px 15px;
+    transition: background 0.3s;
 }
 
-/* Content Sections */
-.container {
+nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+.about img {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+.about, .skills, .contact {
     background: white;
     margin: 20px auto;
     padding: 20px;
-    max-width: 700px;
+    max-width: 600px;
     border-radius: 8px;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.dark-mode .container {
+.dark-mode .about,
+.dark-mode .skills,
+.dark-mode .contact {
     background: #333;
+    color: white;
 }
 
-/* Profile Image */
-.profile-pic {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-}
-
-/* Skills List */
-.skills-list {
-    list-style: none;
+ul {
+    list-style-type: none;
     padding: 0;
 }
 
-.skills-list li {
+li {
     background: #007BFF;
     color: white;
     padding: 10px;
     margin: 5px;
     border-radius: 5px;
-    font-size: 16px;
+    font-size: 14px;
 }
 
-/* Contact Section */
-.container a {
-    text-decoration: none;
-    color: #007BFF;
-    font-weight: bold;
-}
-
-/* Footer */
 footer {
-    background-color: #343a40;
+    background-color: #222;
     color: white;
     padding: 15px;
-    margin-top: 20px;
+    width: 100%;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    background: #007BFF;
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
 }
