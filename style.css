@@ -13,42 +13,42 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #222;
     color: white;
     padding: 15px;
 }
 
 nav {
-    background-color: #555;
-    padding: 8px;
+    background-color: #333;
+    padding: 10px;
     position: sticky;
     top: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    margin: 8px;
-    padding: 6px;
-    display: inline-block;
+    font-size: 16px;
+    font-weight: bold;
 }
 
 .about img {
     width: 130px;
     height: 130px;
     border-radius: 50%;
-    margin: 8px;
+    margin: 10px;
 }
 
 .about, .skills, .contact {
     background: white;
-    margin: 15px auto;
-    padding: 15px;
-    max-width: 500px;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 600px;
     border-radius: 8px;
-    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
-    transition: background 0.5s, color 0.5s;
-    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .dark-mode .about,
@@ -56,7 +56,6 @@ nav a {
 .dark-mode .contact {
     background: #333;
     color: white;
-    border: 1px solid #666;
 }
 
 ul {
@@ -65,33 +64,32 @@ ul {
 }
 
 li {
-    background: #444;
+    background: #007BFF;
     color: white;
-    padding: 8px;
-    margin: 4px;
-    border-radius: 4px;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
     font-size: 14px;
 }
 
 footer {
     background-color: #222;
     color: white;
-    padding: 8px;
+    padding: 15px;
     position: relative;
     width: 100%;
-    bottom: 0;
 }
 
 button {
-    padding: 8px;
-    margin-top: 8px;
+    padding: 10px 20px;
     border: none;
     cursor: pointer;
-    background: #008CBA;
+    background: #007BFF;
     color: white;
-    border-radius: 4px;
+    border-radius: 5px;
+    font-size: 16px;
 }
 
 button:hover {
-    background: #005f73;
+    background: #0056b3;
 }
