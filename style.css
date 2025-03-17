@@ -1,16 +1,26 @@
-222;
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #f4f4f4;
+    transition: background 0.5s, color 0.5s;
+}
+
+.dark-mode {
+    background-color: #222;
     color: #fff;
 }
 
 header {
     background-color: #333;
     color: white;
-    padding: 20px;
+    padding: 15px;
 }
 
 nav {
     background-color: #555;
-    padding: 10px;
+    padding: 8px;
     position: sticky;
     top: 0;
 }
@@ -18,26 +28,27 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-    margin: 10px;
-    padding: 8px;
+    margin: 8px;
+    padding: 6px;
     display: inline-block;
 }
 
 .about img {
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 130px;
     border-radius: 50%;
-    margin: 10px;
+    margin: 8px;
 }
 
 .about, .skills, .contact {
     background: white;
-    margin: 20px auto;
-    padding: 20px;
-    max-width: 600px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 15px auto;
+    padding: 15px;
+    max-width: 500px;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
     transition: background 0.5s, color 0.5s;
+    border: 1px solid #ccc;
 }
 
 .dark-mode .about,
@@ -45,6 +56,7 @@ nav a {
 .dark-mode .contact {
     background: #333;
     color: white;
+    border: 1px solid #666;
 }
 
 ul {
@@ -53,30 +65,31 @@ ul {
 }
 
 li {
-    background: #333;
+    background: #444;
     color: white;
-    padding: 10px;
-    margin: 5px;
-    border-radius: 5px;
+    padding: 8px;
+    margin: 4px;
+    border-radius: 4px;
+    font-size: 14px;
 }
 
 footer {
     background-color: #222;
     color: white;
-    padding: 10px;
-    position: fixed;
+    padding: 8px;
+    position: relative;
     width: 100%;
     bottom: 0;
 }
 
 button {
-    padding: 10px;
-    margin-top: 10px;
+    padding: 8px;
+    margin-top: 8px;
     border: none;
     cursor: pointer;
     background: #008CBA;
     color: white;
-    border-radius: 5px;
+    border-radius: 4px;
 }
 
 button:hover {
