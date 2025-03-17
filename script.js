@@ -1,13 +1,20 @@
 document.addEventListener("DOMContentLoaded", function () {
-    alert("Welcome to my portfolio website!");
-
-    // Dark Mode Toggle
     const darkModeButton = document.getElementById("darkModeToggle");
+
+    if (localStorage.getItem("darkMode") === "enabled") {
+        document.body.classList.add("dark-mode");
+    }
+
     darkModeButton.addEventListener("click", function () {
         document.body.classList.toggle("dark-mode");
+
+        if (document.body.classList.contains("dark-mode")) {
+            localStorage.setItem("darkMode", "enabled");
+        } else {
+            localStorage.setItem("darkMode", "disabled");
+        }
     });
 
-    // Smooth Scroll for Navigation Links
     document.querySelectorAll("nav a").forEach(anchor => {
         anchor.addEventListener("click", function (event) {
             event.preventDefault();
