@@ -1,52 +1,103 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sagor Chandra Das - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Sagor Chandra Das</h1>
-        <p>Digital Marketer | Tech Enthusiast | Video Creator</p>
-        <button id="darkModeToggle">Toggle Dark Mode</button>
-    </header>
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 0;
+text-align: center;
+background-color: #f4f4f4;
+transition: background 0.5s, color 0.5s;
+}
 
-    <nav>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#contact">Contact</a>
-    </nav>
+.dark-mode {
+background-color: #222;
+color: #fff;
+}
 
-    <section id="about" class="about">
-        <h2>About Me</h2>
-        <img src="image.jpg" alt="My Profile Picture" loading="lazy">
-        <p>Hello! I am a final-year Computer Science student at Dhaka International University. I specialize in digital marketing, especially social media marketing, and have interned in a car and flat sales marketing company. I enjoy traveling, listening to music, and hanging out with friends. I also have leadership skills and have organized several events.</p>
-    </section>
+header {
+background-color: #222;
+color: white;
+padding: 15px;
+}
 
-    <section id="skills" class="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Digital Marketing (Social Media Marketing)</li>
-            <li>Event Management & Leadership</li>
-            <li>Basic Computer Operations</li>
-            <li>Video Editing & YouTube Content Creation</li>
-        </ul>
-    </section>
+nav {
+background-color: #333;
+padding: 10px;
+position: sticky;
+top: 0;
+display: flex;
+justify-content: center;
+gap: 20px;
+}
 
-    <section id="contact" class="contact">
-        <h2>Contact</h2>
-        <p>Email: <a href="sagorchandradas526@gmail.com">sagorchandradas526@gmail.com</a></p>
-        <p>Phone: <a href="tel:+8801761160697">+8801761160697</a></p>
-        <p>Facebook: <a href="https://www.facebook.com/share/15vnHgQ9Mr/" target="_blank">Facebook Profile</a></p>
-        <p>YouTube: <a href="https://youtube.com/@sagor001?si=c_QSI3c93S38R9sw" target="_blank">YouTube Channel</a></p>
-    </section>
+nav a {
+color: white;
+text-decoration: none;
+font-size: 16px;
+font-weight: bold;
+padding: 10px 15px;
+transition: background 0.3s;
+}
 
-    <footer>
-        <p>&copy; 2025 Sagor Chandra Das. All Rights Reserved.</p>
-    </footer>
+nav a:hover {
+background: rgba(255, 255, 255, 0.2);
+border-radius: 5px;
+}
 
-    <script src="script.js"></script>
-</body>
-</html>
+.about img {
+width: 130px;
+height: 130px;
+border-radius: 50%;
+margin: 10px;
+}
+
+.about, .skills, .contact {
+background: white;
+margin: 20px auto;
+padding: 20px;
+max-width: 600px;
+border-radius: 8px;
+box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .about,
+.dark-mode .skills,
+.dark-mode .contact {
+background: #333;
+color: white;
+}
+
+ul {
+list-style-type: none;
+padding: 0;
+}
+
+li {
+background: #007BFF;
+color: white;
+padding: 10px;
+margin: 5px;
+border-radius: 5px;
+font-size: 14px;
+}
+
+footer {
+background-color: #222;
+color: white;
+padding: 15px;
+width: 100%;
+}
+
+button {
+padding: 10px 20px;
+border: none;
+cursor: pointer;
+background: #007BFF;
+color: white;
+border-radius: 5px;
+font-size: 16px;
+transition: background 0.3s;
+}
+
+button:hover {
+background: #0056b3;
+}
+
