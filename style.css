@@ -5,7 +5,6 @@ body {
     text-align: center;
     background-color: #f4f4f4;
     transition: background 0.5s, color 0.5s;
-    background: linear-gradient(to bottom, #006a4e 70%, #f42a41 30%;
 }
 
 .dark-mode {
