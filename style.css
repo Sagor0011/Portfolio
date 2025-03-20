@@ -5,6 +5,7 @@ body {
     text-align: center;
     background-color: #6A0DAD;
     transition: background 0.5s, color 0.5s;
+    overflow-x: hidden;
 }
 
 .dark-mode {
@@ -16,6 +17,8 @@ header {
     background-color: #222;
     color: white;
     padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 nav {
@@ -27,6 +30,8 @@ nav {
     flex-wrap: wrap;
     justify-content: center;
     gap: 10px;
+    width: 100%;
+    box-sizing: border-box;
 }
 
 nav a {
@@ -85,6 +90,7 @@ footer {
     color: white;
     padding: 15px;
     width: 100%;
+    box-sizing: border-box;
 }
 
 button {
