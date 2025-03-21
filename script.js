@@ -1,4 +1,3 @@
-
 document.addEventListener("DOMContentLoaded", function () {
     const darkModeButton = document.getElementById("darkModeToggle");
 
@@ -24,5 +23,23 @@ document.addEventListener("DOMContentLoaded", function () {
                 behavior: "smooth"
             });
         });
+    });
+
+    const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("animate");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1
+    });
+
+    ["about", "skills", "contact"].forEach(id => {
+        const section = document.getElementById(id);
+        if (section) {
+            observer.observe(section);
+        }
     });
 });
